@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+        h1 {
+            font-size: 3rem;
+            color: #333; /* Dark gray text color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for decoration */
+        }
+        #clickButton {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        #clickButton:hover {
+            background-color: darkred;
+        }
+        #bottomText {
+            font-size: 0.8rem;
+            margin-top: 50px;
+            color: #666; /* Dark gray text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Take me to a useless website!</h1>
+    <button id="clickButton" onclick="redirectToRandomWebsite()">Click me!</button>
+
+    <p id="bottomText">Submit or report a broken website at submitauselesswebsite@gmail.com!</p>
+
+    <script>
+        function redirectToRandomWebsite() {
+            var websites = [
+                "https://pointerpointer.com",
+                "http://www.koalastothemax.com",
+                "https://cat-bounce.com",
+                "https://hackertyper.net",
+                "https://www.burymewithmymoney.com",
+                "http://www.republiquedesmangues.fr",
+                "https://heeeeeeeey.com",
+                "https://alwaysjudgeabookbyitscover.com",
+                "https://hasthelargehadroncolliderdestroyedtheworldyet.com",
+                "https://www.pleaselike.com",
+                "https://randomcolour.com",
+                "http://www.staggeringbeauty.com",
+                "https://burymewithmymoney.com",
+                "https://cant-not-tweet-this.com",
+                "https://weirdorconfusing.com",
+                "https://www.trypap.com",
+                "https://unicodesnowmanforyou.com",
+                "https://www.everydayim.com",
+                "http://www.movenowthinklater.com",
+                "https://www.zombo.com",
+                "http://hasthelargehadroncolliderdestroyedtheworldyet.com",
+                "http://corndog.io",
+                "https://www.trashloop.com",
+                "http://www.everydayim.com",
+                "https://www.infinitefrogs.com",
+                "http://www.windows93.net",
+                "https://www.fallingfalling.com",
+                "http://www.partridgegetslucky.com",
+                "https://www.rrrgggbbb.com",
+                "http://beesbeesbees.com",
+                "https://greatbignothing.com",
+                "http://chickenonaraft.com",
+                "https://staggeringbeauty.com",
+                "http://endless.horse",
+                "https://www.fallingguy.com",
+                "http://hooooooooo.com",
+                "https://www.purple.com"
+            ];
+
+            var randomIndex = Math.floor(Math.random() * websites.length);
+            var randomWebsite = websites[randomIndex];
+            window.open(randomWebsite, '_blank');
+        }
+    </script>
+</body>
+</html>
